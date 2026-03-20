@@ -1,38 +1,23 @@
 # DROP TABLES
 
 songplay_table_drop = """
-IF EXISTS (SELECT name FROM sys.tables WHERE name='songplays')
-BEGIN
-    DROP TABLE songplays;
-END
+DROP TABLE IF EXISTS dbo.songplays;
 """
 
-user_table_drop = """
-IF EXISTS (SELECT name FROM sys.tables WHERE name='users')
-BEGIN
-    DROP TABLE users;
-END
+user_table_drop ="""
+DROP TABLE IF EXISTS dbo.users;
 """
 
-song_table_drop = """
-IF EXISTS (SELECT name FROM sys.tables WHERE name='songs')
-BEGIN
-    DROP TABLE songs;
-END
+song_table_drop ="""
+DROP TABLE IF EXISTS dbo.songs;
 """
 
 artist_table_drop = """
-IF EXISTS (SELECT name FROM sys.tables WHERE name='artists')
-BEGIN
-    DROP TABLE artists;
-END
+DROP TABLE IF EXISTS dbo.artists;
 """
 
 time_table_drop = """
-IF EXISTS (SELECT name FROM sys.tables WHERE name='time')
-BEGIN
-    DROP TABLE time;
-END
+DROP TABLE IF EXISTS dbo.time;
 """
 
 # CREATE TABLES
