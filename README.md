@@ -5,21 +5,17 @@ we have 2 types of `JSON files` the first one has data about the `song` and the 
 - sql_queries.py
 contains all the `sql queries`, it will be used in the other files.
 - create_tables.py 
-drops and creates your tables.
+drops and creates tables.
 - etl.ipynb 
 reads and processes `files` from `song_data` and `log_data` and loads them into the tables.
 
-
-#### How To Run the Project
-to create the database you will run the `create_tables.py` frist then the `etl.ipynb`
 
 #### ETL Process
 we have 2 directory 
 - log_data it contains log files in JSON format describes the action happened in the sessions, in the page NextSong you can find some data about the song played by the user 
 - song_data it contains log files in JSON format have specific data about the song
-- we will use the song_data files to build the songs and artists table using the func `process_song_file()` in the `etl.ipynb`
-- we will use the log_data files to build the rest of the tables using the func `process_log_file()` in the `etl.ipynb`
-- there is a func `process_data` in the `etl.ipynb` process the directories and pass the JSON files to the funcs to insert the data into the tables
+- we will use the song_data files to build the songs and artists table
+- we will use the log_data files to build the rest of the tables
 
 
 ###### Fact Table
