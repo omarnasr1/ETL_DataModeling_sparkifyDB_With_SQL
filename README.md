@@ -11,7 +11,7 @@ reads and processes `files` from `song_data` and `log_data` and loads them into 
 
 
 #### ETL Process
-we have 2 directory 
+I have 2 directory 
 - log_data it contains log files in JSON format describes the action happened in the sessions, in the page NextSong you can find some data about the song played by the user 
 - song_data it contains log files in JSON format have specific data about the song
 - we will use the song_data files to build the songs and artists table
